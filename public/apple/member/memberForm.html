@@ -17,7 +17,7 @@ th, td {
 	font-size: 15px;
 }
 
-input {
+input, select, textarea {
 	border: none;
 }
 </style>
@@ -53,19 +53,27 @@ input {
 				<th width="180px">전화번호</th>
 				<td width="200px"><input type="text" id="hn" name="hn"></td>
 				<th width="180px">생일</th>
-				<td width="200px"><input type="text" id="bd" name="bd"></td>
+				<td width="200px"><input type="date" id="bd" name="bd"></td>
 			</tr>
 			<tr>
 				<th>국적</th>
-				<td><input type="text" id="country" name="country"></td>
+				<td><select id="coun" name="coun">
+					<option value="NONE">선택 하시오
+					<option value="KOR">한국
+					<option value="JAP">일본
+					<option value="USA">미국
+					<option value="CHN">중국
+				</select></selcet></td>
 				<th>모바일</th>
 				<td><input type="text" id="pn" name="pn"></td>
 			</tr>
 			<tr>
 				<th>모바일 마케팅 수신 동의</th>
-				<td>동의<input type="radio" id="mm" name="mm">&nbsp;비동의<input type="radio" id="mm" name="mm"></td>
+				<td>동의<input type="radio" id="mm" name="mm">&nbsp;비동의<input
+					type="radio" id="mm" name="mm"></td>
 				<th>이메일 수신 동의</th>
-				<td>동의<input type="radio" id="em" name="em">&nbsp;비동의<input type="radio" id="em" name="em"></td>
+				<td>동의<input type="radio" id="em" name="em">&nbsp;비동의<input
+					type="radio" id="em" name="em"></td>
 			</tr>
 			<tr>
 				<th>팩스번호</th>
@@ -88,11 +96,21 @@ input {
 				<th width="180px">추천인</th>
 				<td width="200px"><input type="text" id="rec" name="rec"></td>
 				<th width="180px">sns</th>
-				<td width="200px"><input type="text" id="sns" name="sns"></td>
+				<td width="200px"><select id="sns" name="sns">
+						<option value="none" selected>선택 하시오
+						<option value="ins">instagram
+						<option value="face">FACEBOOK
+						<option value="twit">TWIITER
+				</select></td>
 			</tr>
 			<tr>
 				<th>비밀번호 문제</th>
-				<td><input type="text" id="pq" name="pq"></td>
+				<td><select id="pq" name="pq">
+					<option value="none" selected>선택 하시오
+					<option value="1">나의 모교는?
+					<option value="2">나의 별명은?
+					<option value="3">나의 고향은?
+				</select></td>
 				<th>비밀번호 문제 답</th>
 				<td><input type="text" id="qa" name="qa"></td>
 			</tr>
@@ -100,7 +118,11 @@ input {
 				<th>홈페이지</th>
 				<td><input type="text" id="hp" name="hp"></td>
 				<th>취미</th>
-				<td><input type="text" id="hobby" name="hobby"></td>
+				<td>
+				<input type="checkbox" id="hobby1" name="hobby1">운동
+				<input type="checkbox" id="hobby2" name="hobby2">독서
+				<input type="checkbox" id="hobby3" name="hobby3">영화
+				</td>
 			</tr>
 			<tr>
 				<th>직업(희망)</th>
@@ -110,36 +132,61 @@ input {
 			</tr>
 			<tr>
 				<th>결혼 여부</th>
-				<td>O<input type="radio" id="marry" name="marry">X<input type="radio" id="marry" name="marry"></td>
+				<td>O<input type="radio" id="marry" name="marry">X<input
+					type="radio" id="marry" name="marry"></td>
 				<th>결혼 기념일</th>
 				<td><input type="date" id="MD" name="MD"></td>
 			</tr>
 			<tr>
 				<th>자녀 유무</th>
-				<td>O<input type="radio" id="baby" name="baby">X<input type="radio" id="baby" name="baby"></td>
+				<td>O<input type="radio" id="baby" name="baby">X<input
+					type="radio" id="baby" name="baby"></td>
 				<th colspan="2"></th>
 			</tr>
-			<tr>
-				<th rowspan="3" height="120px">프로젝트 참여</th>
-				<td>프로젝트 명</td>
-				<td colspan="2">여행관렵 웹사이트 개발</td>
-			</tr>
-			<tr>
-				<td>프로젝트 참여기간</td>
-				<td colspan="2">2019.06 ~ 2019.11</td>
-			</tr>
-			<tr>
-				<td>맡은 역할</td>
-				<td colspan="2">html. CSS, php, JSP</td>
-			</tr>
+
 			<tr>
 				<th>자기소개</th>
-				<td colspan="3">나이는 올해 29이고, 컴퓨터 공학과를 졸업했습니다. 졸업후에 뚜렷한 목표의식을
-					갖추지 못해 이곳저곳에서 일하며 혼자 공부를 하다가, 앱 개발관련에 흥미가 생겨 앱 공부를 시작하게 되었습니다.</td>
+				<td colspan="3"><textarea id="int" name="int" cols="80" rows="2" placeholder="자기소개"></textarea></td>
 			</tr>
 
 		</table>
+		<br>
+		<hr>
+
+		<table>
+			<figcaption>프로젝트 정보</figcaption>
+			<br>
+			<tr>
+				<th width="60px">번호</th>
+				<th width="220px">프로젝트 명</th>
+				<th width="310px">프로젝트 개발 기간</th>
+				<th width="130px">발주사</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td><input type="text" id="prjn1" name="prjn1"></td>
+				<td><input type="month" id="prjms1" name="prjms1"> ~ <input
+					type="month" id="prjdme1" name="prjdme1"></td>
+				<td><input type="text" id="ent1" name="ent1"></td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td><input type="text" id="prjn2" name="prjn2"></td>
+				<td><input type="month" id="prjms2" name="prjms2"> ~ <input
+					type="month" id="prjdme2" name="prjdme2"></td>
+				<td><input type="text" id="ent2" name="ent2"></td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td><input type="text" id="prjn3" name="prjn3"></td>
+				<td><input type="month" id="prjms3" name="prjms3"> ~ <input
+					type="month" id="prjdme3" name="prjdme3"></td>
+				<td><input type="text" id="ent3" name="ent3"></td>
+			</tr>
+		</table>
+		<br>
 	</form>
+	<a href="./memberList.html">목록</a>
 </body>
 
 </html>
