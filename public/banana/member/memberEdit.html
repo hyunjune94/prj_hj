@@ -4,48 +4,67 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
 <title>hyunjune html projects</title>
 
 <style type="text/css">
-	table, th, td {
-		border: 1px solid;
-		border-collapse: collapse;
-		border-color: red;
-	}
-	
-	table {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	th {
-		border-width: 2px;
-		background-color: rgb(255,0,0,0.1);
-	}
+table, th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+	border-color: red;
+}
 
-	th, td {
-		padding: 7px;
-		font-size: 15px;
-	}
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	input, select, textarea {
-		border: none;
-	}
-	
-		h1, figcaption { 
-		text-align: center;
-		font-family: 돋음;
-	}
+th {
+	border-width: 2px;
+	background-color: rgb(255, 0, 0, 0.1);
+}
+
+th, td {
+	padding: 7px;
+	font-size: 15px;
+}
+
+input, select, textarea {
+	border: none;
+}
+
+h1, figcaption {
+	text-align: center;
+	font-family: 돋음;
+}
+
+/* #btn_ed button {
+	border: 2px solid red;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#btn_ed button:hover {
+	color: white;
+	background-color: red;
+} */
 </style>
 </head>
 
 <body>
+	<br>
 	<h1>개인 정보</h1>
 	<hr>
 	<form action="" id="" name="" enctype="multipart/form-data">
 		<table>
-			<figcaption>기본 정보</figcaption>
-			<br>
+			<figcaption>
+				<h3>기본 정보</h3>
+			</figcaption>
 			<tr>
 				<th rowspan="4" width="180px" height="120px">사진</th>
 				<td rowspan="4" width="200px"><img src="./4.jpg" width="200px"
@@ -110,9 +129,9 @@
 		<br>
 		<hr>
 		<table>
-			<figcaption>추가 정보</figcaption>
-			<br>
-
+			<figcaption>
+				<h3>추가 정보</h3>
+			</figcaption>
 			<tr>
 				<th width="180px">추천인</th>
 				<td width="200px"><input type="text" id="rec" name="rec"
@@ -141,11 +160,9 @@
 				<td><input type="text" id="hp" name="hp"
 					value="https://www.naver.com/"></td>
 				<th>취미</th>
-				<td>
-				<input type="checkbox" id="hobby1" name="hobby1" checked>운동
-				<input type="checkbox" id="hobby2" name="hobby2">독서
-				<input type="checkbox" id="hobby3" name="hobby3">영화
-				</td>
+				<td><input type="checkbox" id="hobby1" name="hobby1" checked>운동
+					<input type="checkbox" id="hobby2" name="hobby2">독서 <input
+					type="checkbox" id="hobby3" name="hobby3">영화</td>
 			</tr>
 			<tr>
 				<th>직업(희망)</th>
@@ -170,15 +187,17 @@
 			</tr>
 			<tr>
 				<th>자기소개</th>
-				<td colspan="3"><textarea id="int" name="int" cols="80" rows="2">올해 29살이고, 컴퓨터공학과를 졸업했습니다. 앱 개발에 흥미가 생겨 공부를 시작하게 되었습니다.</textarea></td>
+				<td colspan="3"><textarea id="int" name="int" cols="80"
+						rows="2">올해 29살이고, 컴퓨터공학과를 졸업했습니다. 앱 개발에 흥미가 생겨 공부를 시작하게 되었습니다.</textarea></td>
 			</tr>
 		</table>
 		<br>
 		<hr>
 
 		<table>
-			<figcaption>프로젝트 정보</figcaption>
-			<br>
+			<figcaption>
+				<h3>프로젝트 정보</h3>
+			</figcaption>
 			<tr>
 				<th width="60px">번호</th>
 				<th width="220px">프로젝트 명</th>
@@ -215,10 +234,17 @@
 		</table>
 		<br>
 	</form>
-	<div style="text-align: center;">
-		<button type="button" onclick="location.href='./memberList.html';" style="background-color: white; border: 1 solid; border-color: red; font-size:17px; border-radius:20px; margin: 10px;">목록</button>
+	<!-- 	<div id="btn_ed" style="text-align: center;">
+		<button id="btn_ed1" onclick="location.href='./memberList.html';">목록</button>
+	</div> -->
+	<div id="btn_ed" style="text-align: center;">
+		<button type="button" id="btn_ed1" class="btn btn-outline-danger" onclick="location.href='./memberList.html';">목록</button>
 	</div>
-	<br><br><br><br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 </body>
 
 </html>
