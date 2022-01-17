@@ -4,203 +4,218 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+
 <title>hyunjune html projects</title>
 
 <style type="text/css">
-table, th, td {
-	border: 1px solid black;
-	border-collapse: collapse;
-}
-
-th, td {
-	padding: 7px;
-	font-size: 15px;
+table {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input, select, textarea {
 	border: none;
 }
+
+.table-active {
+	text-align: center;
+}
+th, td, input{
+	text-align:center;
+}
 </style>
 </head>
 
-<body>
+<body style="text-align: center;">
+<br>
 	<h1>개인 정보</h1>
 	<hr>
-	<form action="" id="" name="" enctype="multipart/form-data">
-		<table>
-			<figcaption>기본 정보</figcaption>
-			<br>
+
+	<br>
+	<table class="table" style="width: 800px;">
+		<thead>
 			<tr>
-				<th rowspan="4" width="180px" height="120px">사진</th>
-				<td rowspan="4" width="200px"><img src="./4.jpg" width="200px"
-					height="150px"></td>
-				<th width="180px">이름</th>
-				<td width="200px"><input type="text" id="name" name="name"
-					value="강현준"></td>
+				<th colspan="4">개인정보</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="table-active" rowspan="3" width=200px;>사진</th>
+				<td rowspan="3" width=200px;>s</td>
+				<th class="table-active" width=200px;>이름</th>
+				<td width=200px;><input type="text" id="name" name="name" value="강현준"></td>
 			</tr>
 			<tr>
-				<th>아이디</th>
-				<td><input type="text" id="id" name="id" value="hyunjune94"></td>
+				<th class="table-active">아이디</th>
+				<td><input type="text" id="id" name="id" value="hyunjune94"></td> 
 			</tr>
 			<tr>
-				<th>비밀번호</th>
-				<td><input type="password" id="pw" name="pw" value="123456789"></td>
+				<th class="table-active">비밀번호</th>
+				<td><input type="password" id="pw" name="pw" value="12345678"></td>
 			</tr>
 			<tr>
-				<th>성별</th>
-				<td><input type="text" id="gender" name="gender" value="남"></td>
+				<th class="table-active">성별</th>
+				<td><select id="gender" name="gender">
+						<option value="NONE">선택 하시오
+						<option value="MAN" selected>남
+						<option value="WOMAN">여
+				</select></td>
+				<th class="table-active">전화번호</th>
+				<td><input type="text" id="hn" name="hn" value="031-922-9001"></td>
 			</tr>
 			<tr>
-				<th width="180px">전화번호</th>
-				<td width="200px"><input type="text" id="hn" name="hn"
-					value="010-7335-2901"></td>
-				<th width="180px">생일</th>
-				<td width="200px"><input type="date" id="bd" name="bd"
-					value="1994-07-28"></td>
-			</tr>
-			<tr>
-				<th>국적</th>
+				<th class="table-active">생일</th>
+				<td><input type="date" id="bd" name="bd" value="1994-07-28"></td>
+				<th class="table-active">국적</th>
 				<td><select id="coun" name="coun">
 						<option value="NONE">선택 하시오
 						<option value="KOR" selected>한국
 						<option value="JAP">일본
 						<option value="USA">미국
 						<option value="CHN">중국
-				</select> </selcet></td>
-				<th>모바일</th>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<th class="table-active">모바일</th>
 				<td><input type="text" id="pn" name="pn" value="010-7335-2901"></td>
+				<th class="table-active">이메일</th>
+				<td><input type="text" id="email" name="email" value="hyunjune94@naver.com"></td>
 			</tr>
 			<tr>
-				<th>모바일 마케팅 수신 동의</th>
-				<td>동의<input type="radio" id="mm" name="mm" value="y" checked>&nbsp;비동의<input
-					type="radio" id="mm" name="mm" value="n"></td>
-				<th>이메일 수신 동의</th>
-				<td>동의<input type="radio" id="em" name="em" value="y" checked>&nbsp;비동의<input
+				<th class="table-active">이메일 수신 동의</th>
+				<td>동의&nbsp;<input type="radio" id="em" name="em" value="y" checked>&nbsp;&nbsp;비동의&nbsp;<input
 					type="radio" id="em" name="em" value="n"></td>
+				<th class="table-active">모바일 마케팅 수신 동의</th>
+				<td>동의&nbsp;<input type="radio" id="mm" name="mm" value="y" checked>&nbsp;&nbsp;비동의&nbsp;<input
+					type="radio" id="mm" name="mm" value="n"></td>
 			</tr>
 			<tr>
-				<th>팩스번호</th>
-				<td><input type="text" id="fn" name="fn" value="02-123-456"></td>
-				<th>이메일</th>
-				<td><input type="text" id="email" name="email"
-					value="hyunjune94@naver.com"></td>
-			</tr>
-			<tr>
-				<th>주소</th>
-				<td colspan="3"><input type="text" id="address" name="address"
-					size="80" value="경기도 고양시 일산서구 주엽2동 202-1402"></td>
-			</tr>
-		</table>
-		<br>
-		<hr>
-		<table>
-			<figcaption>추가 정보</figcaption>
-			<br>
+				<th class="table-active">주소</th>
+				<td colspan="3"><input type="text" id="address" name="address" size="80" value="경기도 고양시 일산서구 주엽2동 202-1402"></td>
 
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<hr>
+
+	<table class="table" style="width: 800px;">
+		<thead>
 			<tr>
-				<th width="180px">추천인</th>
-				<td width="200px"><input type="text" id="rec" name="rec"
-					value="이젠it"></td>
-				<th width="180px">sns</th>
-				<td width="200px"><select id="sns" name="sns">
-						<option value="none">선택 하시오
+				<th colspan="4">추가정보</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="table-active" width=200px;>추천인</th>
+				<td width=200px;><input type="text" id="rec" name="rec" value="이젠it"></td>
+				<th class="table-active" width=200px;>sns</th>
+				<td width=200px;><select id="sns" name="sns">
+						<option value="none" selected>선택 하시오
 						<option value="ins">instagram
 						<option value="face" selected>FACEBOOK
 						<option value="twit">TWIITER
 				</select></td>
 			</tr>
 			<tr>
-				<th>비밀번호 문제</th>
+				<th class="table-active">비밀번호 문제</th>
 				<td><select id="pq" name="pq">
-						<option value="none" selected>선택 하시오
+						<option value="none">선택 하시오
 						<option value="1" selected>나의 모교는?
 						<option value="2">나의 별명은?
 						<option value="3">나의 고향은?
 				</select></td>
-				<th>비밀번호 문제 답</th>
+				<th class="table-active">비밀번호 문제 답</th>
 				<td><input type="text" id="qa" name="qa" value="오마 초등학교"></td>
 			</tr>
 			<tr>
-				<th>홈페이지</th>
-				<td><input type="text" id="hp" name="hp"
-					value="https://www.naver.com/"></td>
-				<th>취미</th>
-				<td>
-				<input type="checkbox" id="hobby1" name="hobby1" checked>운동
-				<input type="checkbox" id="hobby2" name="hobby2">독서
-				<input type="checkbox" id="hobby3" name="hobby3">영화
-				</td>
+				<th class="table-active">홈페이지</th>
+				<td><input type="text" id="hp" name="hp" value="https://www.naver.com/"></td>
+				<th class="table-active">취미</th>
+				<td><input type="checkbox" id="hobby1" name="hobby1" checked>운동&nbsp;
+					<input type="checkbox" id="hobby2" name="hobby2">독서&nbsp; <input
+					type="checkbox" id="hobby3" name="hobby3">영화</td>
 			</tr>
 			<tr>
-				<th>직업(희망)</th>
+				<th class="table-active">직업(희망)</th>
 				<td><input type="text" id="job" name="job" value="앱 개발자"></td>
-				<th>좋아하는 색깔
-				<td><input type="text" id="color" name="color" value="하늘색"
-					style="background-color: #00FFFF"></td>
+				<th class="table-active">좋아하는 색깔</th>
+				<td><input type="text" id="color" name="color" value="파란색"></td>
 			</tr>
 			<tr>
-				<th>결혼 여부</th>
-				<td>O<input type="radio" id="marry" name="marry" value="y"
-					checked>X<input type="radio" id="marry" name="marry"
-					value="n"></td>
-				<th>결혼 기념일</th>
+				<th class="table-active">결혼 여부</th>
+				<td>O&nbsp;<input type="radio" id="marry" name="marry" value="y" checked>&nbsp;&nbsp;X&nbsp;<input
+					type="radio" id="marry" name="marry" value="n"></td>
+				<th class="table-active">결혼 기념일</th>
 				<td><input type="date" id="MD" name="MD" value="2022-01-08"></td>
 			</tr>
 			<tr>
-				<th>자녀 유무</th>
-				<td>O<input type="radio" id="baby" name="baby" value="y">X<input
+				<th class="table-active">자녀 유무</th>
+				<td>O&nbsp;<input type="radio" id="baby" name="baby" value="y">&nbsp;&nbsp;X&nbsp;<input
 					type="radio" id="baby" name="baby" value="n" checked></td>
-				<th colspan="2"></th>
+				<th class="table-active"></th>
+				<td></td>
 			</tr>
 			<tr>
-				<th>자기소개</th>
-				<td colspan="3"><textarea id="int" name="int" cols="80" rows="2">올해 29살이고, 컴퓨터공학과를 졸업했습니다. 앱 개발에 흥미가 생겨 공부를 시작하게 되었습니다.</textarea></td>
-			</tr>
-		</table>
-		<br>
-		<hr>
+				<th class="table-active">자기소개</th>
+				<td colspan="3"><textarea id="int" name="int" cols="80"
+						rows="2" placeholder="자기소개">올해 29살이고, 컴퓨터공학과를 졸업했습니다. 앱 개발에 흥미가 생겨 공부를 시작하게 되었습니다.</textarea></td>
 
-		<table>
-			<figcaption>프로젝트 정보</figcaption>
-			<br>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<hr>
+
+	<table class="table" style="width: 800px;">
+		<thead>
 			<tr>
-				<th width="60px">번호</th>
-				<th width="220px">프로젝트 명</th>
-				<th width="310px">프로젝트 개발 기간</th>
-				<th width="130px">발주사</th>
+				<th colspan="4">프로젝트 정보</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="table-active" width=100px;>번호</th>
+				<th class="table-active" width=300px;>프로젝트 명</th>
+				<th class="table-active" width=200px;>프로젝트 개발 기간</th>
+				<th class="table-active" width=200px;>발주사</th>
 			</tr>
 			<tr>
-				<th>1</th>
-				<td><input type="text" id="prjn1" name="prjn1"
-					value="여행 사이트 제작"></td>
-				<td><input type="month" id="prjms1" name="prjms1"
-					value="2019-01"> ~ <input type="month" id="prjdme1"
-					name="prjdme1" value="2019-06"></td>
+				<th class="table-active">1</th>
+				<td><input type="text" id="prjn1" name="prjn1" value="여행 사이트 제작"></td>
+				<td><input type="month" id="prjms1" name="prjms1" value="9019-01"> ~ <input
+					type="month" id="prjdme1" name="prjdme1" value="2019-06"></td>
 				<td><input type="text" id="ent1" name="ent1" value="네이버"></td>
 			</tr>
 			<tr>
-				<th>2</th>
-				<td><input type="text" id="prjn2" name="prjn2"
-					value="개인정보 보안 시스템 구축"></td>
-				<td><input type="month" id="prjms2" name="prjms2"
-					value="2017-11"> ~ <input type="month" id="prjdme2"
-					name="prjdme2" value="2018-06"></td>
+				<th class="table-active">2</th>
+				<td><input type="text" id="prjn2" name="prjn2" value="개인정보 보안 시스템 구축"></td>
+				<td><input type="month" id="prjms2" name="prjms2" value="2017-11"> ~ <input
+					type="month" id="prjdme2" name="prjdme2" value="2018-06"></td>
 				<td><input type="text" id="ent2" name="ent2" value="한국은행"></td>
 			</tr>
 			<tr>
-				<th>3</th>
-				<td><input type="text" id="prjn3" name="prjn3"
-					value="플레시 게임 제작"></td>
-				<td><input type="month" id="prjms3" name="prjms3"
-					value="2021-01"> ~ <input type="month" id="prjdme3"
-					name="prjdme3" value="2022-01"></td>
+				<th class="table-active">3</th>
+				<td><input type="text" id="prjn3" name="prjn3" value="플레시 게임 제작"></td>
+				<td><input type="month" id="prjms3" name="prjms3" value="2021-01"> ~ <input
+					type="month" id="prjdme3" name="prjdme3" value="2022-01"></td>
 				<td><input type="text" id="ent3" name="ent3" value="한게임"></td>
 			</tr>
-		</table>
-		<br>
-	</form>
-	<a href="./memberList.html">목록</a>
-	<br><br><br><br><br>
+		</tbody>
+	</table>
+	<br>
+<button type="button" class="btn btn-outline-secondary" onclick="location.href='./memberList.html';">목록</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 </body>
 
 </html>
