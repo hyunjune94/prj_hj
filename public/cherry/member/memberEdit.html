@@ -37,7 +37,7 @@ th, td, input{
 	<hr>
 
 	<br>
-	<table class="table" style="width: 800px;">
+	<table class="table" style="width: 1000px;">
 		<thead>
 			<tr>
 				<th colspan="4">개인정보</th>
@@ -46,9 +46,9 @@ th, td, input{
 		<tbody>
 			<tr>
 				<th class="table-active" rowspan="3" width=200px;>사진</th>
-				<td rowspan="3" width=200px;>s</td>
+				<td rowspan="3" width=300px;>s</td>
 				<th class="table-active" width=200px;>이름</th>
-				<td width=200px;><input type="text" id="name" name="name" value="강현준"></td>
+				<td width=300px;><input type="text" id="name" name="name" value="강현준"></td>
 			</tr>
 			<tr>
 				<th class="table-active">아이디</th>
@@ -89,11 +89,31 @@ th, td, input{
 			</tr>
 			<tr>
 				<th class="table-active">이메일 수신 동의</th>
-				<td>동의&nbsp;<input type="radio" id="em" name="em" value="y" checked>&nbsp;&nbsp;비동의&nbsp;<input
-					type="radio" id="em" name="em" value="n"></td>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="em" id="em"
+							value="emy" checked> <label class="form-check-label"
+							for="inlineRadio1">동의</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="em" id="em"
+							value="emn"> <label class="form-check-label"
+							for="inlineRadio2">비동의</label>
+					</div>
+				</td>
 				<th class="table-active">모바일 마케팅 수신 동의</th>
-				<td>동의&nbsp;<input type="radio" id="mm" name="mm" value="y" checked>&nbsp;&nbsp;비동의&nbsp;<input
-					type="radio" id="mm" name="mm" value="n"></td>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="mm" id="mm"
+							value="mmy" checked> <label class="form-check-label"
+							for="inlineRadio1">동의</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="mm" id="mm"
+							value="mmn"> <label class="form-check-label"
+							for="inlineRadio2">비동의</label>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<th class="table-active">주소</th>
@@ -105,7 +125,7 @@ th, td, input{
 	<br>
 	<hr>
 
-	<table class="table" style="width: 800px;">
+	<table class="table" style="width: 1000px;">
 		<thead>
 			<tr>
 				<th colspan="4">추가정보</th>
@@ -114,9 +134,9 @@ th, td, input{
 		<tbody>
 			<tr>
 				<th class="table-active" width=200px;>추천인</th>
-				<td width=200px;><input type="text" id="rec" name="rec" value="이젠it"></td>
+				<td width=300px;><input type="text" id="rec" name="rec" value="이젠it"></td>
 				<th class="table-active" width=200px;>sns</th>
-				<td width=200px;><select id="sns" name="sns">
+				<td width=300px;><select id="sns" name="sns">
 						<option value="none" selected>선택 하시오
 						<option value="ins">instagram
 						<option value="face" selected>FACEBOOK
@@ -150,15 +170,35 @@ th, td, input{
 			</tr>
 			<tr>
 				<th class="table-active">결혼 여부</th>
-				<td>O&nbsp;<input type="radio" id="marry" name="marry" value="y" checked>&nbsp;&nbsp;X&nbsp;<input
-					type="radio" id="marry" name="marry" value="n"></td>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="marry"
+							id="marry" value="marryy" checked> <label
+							class="form-check-label" for="inlineRadio2">O</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="marry"
+							id="marry" value="marryn"> <label
+							class="form-check-label" for="inlineRadio2">X</label>
+					</div>
+				</td>
 				<th class="table-active">결혼 기념일</th>
 				<td><input type="date" id="MD" name="MD" value="2022-01-08"></td>
 			</tr>
 			<tr>
 				<th class="table-active">자녀 유무</th>
-				<td>O&nbsp;<input type="radio" id="baby" name="baby" value="y">&nbsp;&nbsp;X&nbsp;<input
-					type="radio" id="baby" name="baby" value="n" checked></td>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="child"
+							id="child" value="childy"> <label
+							class="form-check-label" for="inlineRadio2">O</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="child"
+							id="child" value="childn" checked> <label
+							class="form-check-label" for="inlineRadio2">X</label>
+					</div>
+				</td>
 				<th class="table-active"></th>
 				<td></td>
 			</tr>
@@ -173,7 +213,7 @@ th, td, input{
 	<br>
 	<hr>
 
-	<table class="table" style="width: 800px;">
+	<table class="table" style="width: 1000px;">
 		<thead>
 			<tr>
 				<th colspan="4">프로젝트 정보</th>
@@ -183,7 +223,7 @@ th, td, input{
 			<tr>
 				<th class="table-active" width=100px;>번호</th>
 				<th class="table-active" width=300px;>프로젝트 명</th>
-				<th class="table-active" width=200px;>프로젝트 개발 기간</th>
+				<th class="table-active" width=400px;>프로젝트 개발 기간</th>
 				<th class="table-active" width=200px;>발주사</th>
 			</tr>
 			<tr>
