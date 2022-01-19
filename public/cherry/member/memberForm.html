@@ -31,12 +31,14 @@ input, select, textarea {
 }
 
 th {
-	vertical-align:middle;
+	vertical-align: middle;
 }
 </style>
 </head>
 
 <body style="text-align: center;">
+
+
 	<br>
 	<h1>개인 정보</h1>
 	<hr>
@@ -71,7 +73,26 @@ th {
 						<option value="WOMAN">여
 				</select></td>
 				<th class="table-active">전화번호</th>
-				<td><input type="text" id="hn" name="hn"></td>
+
+				<td><div class="input-group mb-3">
+					
+							<select class="form-select" id="floatingSelectGrid"
+								aria-label="Floating label select example">
+								<option selected>지역</option>
+								<option value="1">02)</option>
+								<option value="2">031)</option>
+								<option value="3">033)</option>
+								<option value="4">051)</option>
+								<option value="5">064)</option>
+							</select>
+
+							<input type="text"	class="form-control" aria-label="mn1"> 
+							<span class="input-group-text">-</span>
+							<input type="text"	class="form-control" aria-label="mn2"> 
+					
+					</div></td>
+
+				<!-- <td><input type="text" id="hn" name="hn"></td> -->
 			</tr>
 			<tr>
 				<th class="table-active">생일</th>
@@ -87,15 +108,23 @@ th {
 			</tr>
 			<tr>
 				<th class="table-active">모바일</th>
-				<td><div class="input-group mb-3">
-						<input type="text" class="form-control"	aria-label="mn1">
-						 <span class="input-group-text">-</span>
-						<input type="text" class="form-control"	aria-label="mn2">
-						 <span class="input-group-text">-</span>
-						<input type="text" class="form-control" aria-label="mn3">
-					</div></td>
+				<td>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" aria-label="mn1">
+						<span class="input-group-text">-</span>
+						<input type="text"	class="form-control" aria-label="mn2"> 
+						<span class="input-group-text">-</span> 
+						<input type="text"	class="form-control" aria-label="mn3">
+					</div>
+				</td>
 				<th class="table-active">이메일</th>
-				<td><input type="text" id="email" name="email"></td>
+				<td><div class="input-group mb-3">
+						<input type="text" class="form-control" aria-label="em1">
+						<span class="input-group-text">@</span> <input type="text"
+							class="form-control" aria-label="em2">
+					</div></td>
+
+				<!-- <td><input type="text" id="email" name="email"></td> -->
 			</tr>
 			<tr>
 				<th class="table-active">이메일 수신 동의</th>
@@ -168,9 +197,26 @@ th {
 				<th class="table-active">홈페이지</th>
 				<td><input type="text" id="hp" name="hp"></td>
 				<th class="table-active">취미</th>
-				<td><input type="checkbox" id="hobby1" name="hobby1">운동&nbsp;
+
+				<td><div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="hobby1"
+							value="option1"> <label class="form-check-label"
+							for="inlineCheckbox1">운동</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="hobby2"
+							value="option2"> <label class="form-check-label"
+							for="inlineCheckbox2">독서</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="hobby3"
+							value="option2"> <label class="form-check-label"
+							for="inlineCheckbox2">영화</label>
+					</div></td>
+
+				<!-- 				<td><input type="checkbox" id="hobby1" name="hobby1">운동&nbsp;
 					<input type="checkbox" id="hobby2" name="hobby2">독서&nbsp; <input
-					type="checkbox" id="hobby3" name="hobby3">영화</td>
+					type="checkbox" id="hobby3" name="hobby3">영화</td> -->
 			</tr>
 			<tr>
 				<th class="table-active">직업(희망)</th>
@@ -267,6 +313,7 @@ th {
 	<br>
 	<br>
 	<br>
+
 </body>
 
 </html>
