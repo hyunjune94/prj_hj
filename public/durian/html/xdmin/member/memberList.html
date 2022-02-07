@@ -13,7 +13,6 @@
 
 <style type="text/css">
 .list_header {
- 	background-color: red;
 	width: 100%;
 	height: 120px;
 }
@@ -24,7 +23,6 @@
 }
 
 .list_aside {
- 	background-color: blue;
 	width: 100%;
 	height: 40%;
 }
@@ -53,7 +51,7 @@
 }
 
 	.col-6 {
-    		border: 1px solid yellow;
+    	/* 	border: 1px solid yellow; */
     		margin-top:10px;
     	}
     	
@@ -112,22 +110,27 @@
 				<div class="row">
 				    <div class="col-6 col-md-3">
 					    <select class="form-select" aria-label="Default select example">
-							<option selected>삭제여부</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option	>
+							<option selected>가입 일자</option>
+							<option value="1">1년 이내</option>
+							<option value="2">1년~2년</option>
+							<option value="3">2년~3년</option	>
+							<option value="3">3년 이상</option	>
 						</select>
 					</div>
 					<div class="col-6 col-md-3">
 					    <select class="form-select" aria-label="Default select example">
-							<option selected>날짜</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
+							<option selected>연령</option>
+							<option value="1">8세 이하</option>
+							<option value="2">청소년</option>
+							<option value="3">성인</option>
 						</select>
 					</div>
 					<div class="col-6 col-md-3">
-						<input type="text" class="form-control" placeholder="시작일" aria-label="Username" aria-describedby="basic-addon1">
+					    <select class="form-select" aria-label="Default select example">
+							<option selected>성별</option>
+							<option value="1">남</option>
+							<option value="2">여</option>
+						</select>
 					</div>
 					<div class="col-6 col-md-3">
 						<input type="text" class="form-control" placeholder="종료일" aria-label="Username" aria-describedby="basic-addon1">

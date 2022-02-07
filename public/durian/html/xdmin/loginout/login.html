@@ -28,14 +28,12 @@
 } 
 
 .my_aside {
-/* 	background-color: blue; */
 	width: 100%;
 	float: left;
 	margin: 0 auto;
 }
 
 .my_content {
-/* 	background-color: gray; */
 	width: 100%;
 	float: left;
 	margin: 0 auto;
@@ -52,6 +50,7 @@
 
 .btn_area {
 	text-align: center;
+	width: 100%;
 }
 
 .log_sub {
@@ -59,11 +58,13 @@
 }
 
 .log_sub_left {
+	background-color:red;
 	float: left;
 	text-align: left;
 }
 
 .log_sub_right {
+	background-color:blue;
 	float: right;
 	text-align: right;
 }
@@ -74,14 +75,11 @@
 	padding-bottom: 20px;
 }
 
-.my_header > img {
-	text-align: center;
-	
+.my_account{
+	width: 55%;
+	margin: 0 auto;
 }
 
-.my_section > button > img {
-	text-align: left;
-}
 </style>
 
 </head>
@@ -93,8 +91,7 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="offcanvas offcanvas-end" tabindex="-1"
-					id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 					<div class="offcanvas-header">
 						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">cherry</h5>
 						<button type="button" class="btn-close text-reset"
@@ -135,47 +132,84 @@
 	</div>
 	<br><br>
 	<div class="my_section">
-		<div class="container">
-			<h6>내 계정으로 로그인</h6>
-			<div class="my_aside">		
-				<div class="col-lg-6">
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-					</div>
+		<div class="container">					
+			<div class="row" style="float:none; margin: 100 auto;">
+				<div class="col-lg-8" style="float:none; margin: 0 auto;">
+					<h6>내 계정으로 로그인</h6>
 				</div>
-				<div class="col-lg-6">	
-					<div class="input-group mb-3">
-						<input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+			</div>	
+		</div>	
+				<div class="my_aside">
+					<div class="container">
+						<div class="row" style="float:none; margin: 100 auto;">
+							<div class="col-lg-8" style="float:none; margin: 0 auto;">
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								</div>
+							</div>
+						</div>	
+						<div class="row" style="float:none; margin: 100 auto;">
+							<div class="col-lg-8" style="float:none; margin: 0 auto;">	
+								<div class="input-group mb-3">
+									<input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>							
+					<br><br>		
+				<div class="btn_area">
+					<button type="button" class="btn btn-primary btn-lg">로그인</button>
+				</div>
+				<br>
+				<div class="log_sub">
+	<!-- 				<div class="log_sub_left">
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+						  <label class="form-check-label" for="flexCheckChecked">
+						    로그인 상태 유지
+						  </label>
+						</div>
+					</div>
+					<div class="log_sub_right">
+						<img src="../../../images/key.png"><a href="" style="text-decoration:none">아이디 / 비밀번호 찾기</a>
+					</div> --> 
+			<div class="container">					
+				<div class="row" style="float:none; margin: 100 auto;">
+					<div class="col-lg-8" style="float:none; margin: 0 auto;">
+						<div style="float:left;">
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+							  <label class="form-check-label" for="flexCheckChecked">
+							    로그인 상태 유지
+							  </label>
+							</div>
+						</div>
+						<h6 style="float:right;"><img src="../../../images/key.png"><a href="" style="text-decoration:none">아이디 / 비밀번호 찾기</a></h6>
 					</div>
 				</div>	
-				<br><br>
-			</div>				
-			<div class="btn_area">
-				<button type="button" class="btn btn-primary btn-lg">로그인</button>
 			</div>
-			<br>
-			<div class="log_sub">
-				<div class="log_sub_left">
-					<div class="form-check">
-					  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-					  <label class="form-check-label" for="flexCheckChecked">
-					    로그인 상태 유지
-					  </label>
+				</div>
+				<br><br><br><br>
+				<div class="my_content">
+					<div class="container">
+						<div class="row" style="float:none; margin: 100 auto;">
+							<div class="col-lg-8" style="float:none; margin: 0 auto;">
+								  <button class="btn btn-warning" type="button" style="width: 100%;"><img src="../../../images/kakao.png"> 카카오 계정으로 로그인 </button>
+							</div>
+							<br><br>
+							<div class="col-lg-8" style="float:none; margin: 0 auto;">
+								  <button class="btn btn-success" type="button" style="width: 100%;"><img src="../../../images/naver.png"> 네이버 계정으로 로그인</button>
+							</div>
+							<br><br>
+							<div class="col-lg-8" style="float:none; margin: 0 auto;">
+								  <button class="btn btn-primary" type="button" style="width: 100%;"><img src="../../../images/google.png"> 구글 계정으로 로그인</button>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="log_sub_right">
-					<img src="../../../images/key.png"><a href="" style="text-decoration:none">아이디 / 비밀번호 찾기</a>
-				</div> 
-			</div>
-			<br><br><br><br>
-			<div class="container-md">
-				<div class="d-grid gap-2">
-				  <button class="btn btn-warning" type="button"><img src="../../../images/kakao.png"> 카카오 계정으로 로그인 </button>
-				  <button class="btn btn-success" type="button"><img src="../../../images/naver.png"> 네이버 계정으로 로그인</button>
-				  <button class="btn btn-primary" type="button"><img src="../../../images/google.png"> 구글 계정으로 로그인</button>
-				</div>
-			</div>
-		</div>
+				</div>	
+			
+			
 	</div>
 	<div class="my_footer">
 	<br>
