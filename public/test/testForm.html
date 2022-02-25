@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<title>강현준</title>
+
+<style type="text/css">
+
+.form_header {
+	background-color: red;
+	width: 100%;
+	height: 70px;
+}
+
+.form_navbar {
+	background-color: grey;
+	width: 100%;
+	height: 70px;
+}
+
+.form_section {
+/* 	background-color: blue; */
+	width: 100%;
+	height: 600px;
+} 
+
+.navbar-brand {
+	font-size:30px;
+	margin: 5px 6px;
+}
+
+.header_section {
+	height : 60px;
+	width:20%;
+	padding:auto;
+}
+
+.header_aside {
+	height:60%;
+	width:50%;
+	font-size:20px;	
+}
+
+.header_content {
+	height:40%;
+	width:50%;
+	float:left;	
+}
+
+
+.form_header > nav > div > div > select {
+	border-radius : 5px;
+}
+
+</style>
+</head>
+
+<body>
+	<div class = "form_header">
+		<nav class="navbar navbar-light bg-light" style="height:100%">
+		  <div class="container-fluid">
+		  	<div>
+			    <a class="navbar-brand" href="#">KAIONEX</a>
+			    <a>ABC Management System</a>
+		    </div>
+		    <div class="header_section">
+		    	<div class="header_aside">
+		    		<a>Tony Chang</a>
+		       	</div>
+		    	<div class="header_content">
+		    		<a>administer</a>
+		    	</div>
+			    	<select>
+						<option selected>언어</option>
+						<option value="1">한국어</option>
+						<option value="2">영어</option>
+					</select>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<div class = "form_navbar">
+		<nav class="navbar navbar-expand-lg navbar-light" style="height:100%; background-color:#A9F5F2">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="navbarNav">
+			  		<ul class="navbar-nav">
+			      		<li class="nav-item">
+					    	<a class="nav-link active" aria-current="page" href="#">Navbar</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">회원관리</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">서비스관리</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">사이트관리</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#">로그관리</a>
+					    </li>
+					    <li class="nav-item">
+					   		<a class="nav-link" href="#">시스템관리</a>
+					    </li>
+					    <li class="nav-item">
+					    	<a class="nav-link" href="#">시스템관리</a>
+					    </li>
+			  		</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class = "form_section">
+		<h3 style="margin-left:15px;">Code</h3>
+		<div class="container">
+			<div class="row g-3">
+			    <div class="col-6">
+						<label for="formGroupExampleInput" class="form-label">아이디</label>
+  						<input type="text" class="form-control" id="ID" placeholder="영문(대소문자), 숫자, 특수문자, 4~20자리 조합">
+			    </div>
+			    <div class="col-6">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">비밀번호</label>
+  					<input type="text" class="form-control" id="Password" placeholder="영문(대소문자), 숫자, 특수문자, 4~20자리 조합">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">비밀번호 확인</label>
+  					<input type="text" class="form-control" id="Password_check">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">이름</label>
+  					<input type="text" class="form-control" id="name">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">이름(영문)</label>
+  					<input type="text" class="form-control" id="name_eng">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">이름</label>
+  					<input type="text" class="form-control" id="name">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">성</label>
+  					<input type="text" class="form-control" id="first_name">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">이름(영문)</label>
+  					<input type="text" class="form-control" id="name_eng">
+			    </div>
+			    <div class="col-6">
+		    		<label for="formGroupExampleInput" class="form-label">성(영문)</label>
+  					<input type="text" class="form-control" id="first_name_eng">
+			    </div>
+			    <div class="col-6">
+			   		<label for="formGroupExampleInput" class="form-label">성별</label>
+			    	<select class="form-select" aria-label="Default select example">
+					  <option selected>::선택::</option>
+					  <option value="1">남</option>
+					  <option value="2">여</option>
+					</select>
+			    </div>
+			    <div class="col-6">
+		    		<label for="formGroupExampleInput" class="form-label">생일</label>
+  					<input type="text" class="form-control" id="birthday">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">비밀번호</label>
+  					<input type="text" class="form-control" id="Email" placeholder="name@example.com">
+			    </div>
+			    <div class="col-6">
+					<label for="formGroupExampleInput" class="form-label">이메일 정보 마케팅 사용동의</label>
+  					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="Email_marketing">
+						<label class="form-check-label" for="flexCheckDefault">
+						동의합니다
+						</label>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>	
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+</html>
