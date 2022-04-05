@@ -2069,6 +2069,26 @@ textarea.form-control {
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
+  
+.btn-search {
+	color: #866ec7;
+	background-color: #fff;
+	border-color: #866ec7;
+	padding: 0.25rem 0.5rem !important;
+	font-size: 0.875rem !important;
+	line-height: 1.5 !important;
+	border-radius: 0.2rem !important;
+}
+
+.btn-search:hover {
+	color: #fff;
+	background-color: #866ec7;
+	border-color: #fff;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	border-radius: 0.2rem;
+}
 
 .btn-primary {
   color: #fff;
@@ -8299,13 +8319,13 @@ a[data-toggle="collapse"] {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-.btn.btn-primary {
+/* .btn.btn-primary {
   background: #866ec7;
   border-color: #866ec7; }
   .btn.btn-primary:hover, .btn.btn-primary:focus {
     background: #866ec7 !important;
     border-color: #866ec7 !important; }
-
+ */
 .footer p {
   color: rgba(255, 255, 255, 0.5); }
 

@@ -16,7 +16,10 @@
   <style>
   #sidebar {
   	width:400px;
+  	min-width:250px;
+  	
   }
+
   </style>
   <body>
 		
@@ -35,7 +38,6 @@
 				<br><br>
 				<form action="#" class="colorlib-subscribe-form">
 	            <div class="form-group d-flex">
-	            	<div class="icon"><span class="icon-paper-plane"></span></div>
 	              <input type="text" class="form-control" placeholder="장소, 도로 검색">
 	            </div>
 	          </form>
@@ -43,25 +45,31 @@
 					<li class="active">
 						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"	class="dropdown-toggle"><i class="fa fa-home"></i> Home</a>
 						<ul class="collapse list-unstyled" id="homeSubmenu">
-							<li><a href="#">Home 1</a></li>
-							<li><a href="#">Home 2</a></li>
+							<li>
+								<a><strong>고양시 일선서구 주엽2동</strong><br><i class="fa fa-sun-o" aria-hidden="true" style="color: yellow"></i> | <i class="fa fa-cloud" aria-hidden="true" style="color: white"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2℃ | 17℃</a>
+							</li>
 							<li><a href="#">Home 3</a></li>
 						</ul>
 					</li>
 					<li class="active">
-						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"	class="dropdown-toggle"><i class="fa fa-map"></i> map</a>
-						<ul class="collapse list-unstyled" id="pageSubmenu">
-							<li><a href="#">Home 1</a></li>
-							<li><a href="#">Home 2</a></li>
-							<li><a href="#">Home 3</a></li>
+						<a href="#mapSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-map"></i> map</a>
+						<ul class="collapse list-unstyled" id="mapSubmenu">
+							<li><input type="text" class="form-control" placeholder="출발지 입력" style="margin-bottom:5px; margin-top:5px;"></li>
+							<li><input type="text" class="form-control" placeholder="도착지 입력" style="margin-bottom:5px;"></li>
+							<li>
+								<div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-bottom:1px solid rgba(255, 255, 255, 0.1); padding-bottom:10px;">
+								  <button class="btn btn-search" type="button">찾기</button>
+								</div>
+							</li>
+							<li><a href="#">최근검색</a></li>
 						</ul>
 					</li>
 					<li class="active">
-						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"	class="dropdown-toggle"><i class="fa fa-bookmark"></i> bookmark</a>
-						<ul class="collapse list-unstyled" id="homeSubmenu">
-							<li><a href="#">Home 1</a></li>
-							<li><a href="#">Home 2</a></li>
-							<li><a href="#">Home 3</a></li>
+						<a href="#bookmarkSubmenu" data-toggle="collapse" aria-expanded="false"	class="dropdown-toggle"><i class="fa fa-bookmark"></i> bookmark</a>
+						<ul class="collapse list-unstyled" id="bookmarkSubmenu">
+							<li><a href="#"><i class="fa fa-star" aria-hidden="true" style="color: yellow"></i> &nbsp;우리집</a></li>
+							<li><a href="#"><i class="fa fa-star" aria-hidden="true" style="color: yellow"></i> &nbsp;오마 중학교</a></li>
+							<li><a href="#"><i class="fa fa-star" aria-hidden="true" style="color: yellow"></i> &nbsp;이모네 곱창</a></li>
 						</ul>
 					</li>
 					<li><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
